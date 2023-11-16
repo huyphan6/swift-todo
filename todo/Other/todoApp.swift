@@ -10,11 +10,14 @@ import FirebaseCore
 
 @main
 struct todoApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                MainView()
             }
         }
     }
