@@ -16,9 +16,7 @@ struct todoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                MainView()
-            }
+            MainView()
         }
     }
 }
