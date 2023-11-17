@@ -15,7 +15,7 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "todo", subtitle: "do or do not, there is no try", angle: 1/Double.pi, backgroundColor: Color.cyan)
                 
                 // Login form
                 Form {
