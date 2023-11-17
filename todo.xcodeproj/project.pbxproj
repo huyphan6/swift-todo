@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510A007A2B080E33005F3298 /* TDLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510A00792B080E33005F3298 /* TDLButton.swift */; };
 		519271882B054DA100646EA4 /* todoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519271872B054DA100646EA4 /* todoApp.swift */; };
 		5192718A2B054DA100646EA4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519271892B054DA100646EA4 /* MainView.swift */; };
 		5192718C2B054DA400646EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5192718B2B054DA400646EA4 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510A00792B080E33005F3298 /* TDLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLButton.swift; sourceTree = "<group>"; };
 		519271842B054DA100646EA4 /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		519271872B054DA100646EA4 /* todoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoApp.swift; sourceTree = "<group>"; };
 		519271892B054DA100646EA4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				51F8592A2B05DDC50028946D /* RegisterView.swift */,
 				51F8592C2B05DDF60028946D /* ToDoListItemView.swift */,
 				51BBD4402B0698FD00D24405 /* HeaderView.swift */,
+				510A00792B080E33005F3298 /* TDLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				51F8593D2B05DF0A0028946D /* RegisterViewViewModel.swift in Sources */,
 				51F859332B05DEA40028946D /* MainViewViewModel.swift in Sources */,
 				51F859252B05DD760028946D /* ToDoListView.swift in Sources */,
+				510A007A2B080E33005F3298 /* TDLButton.swift in Sources */,
 				51F8592B2B05DDC50028946D /* RegisterView.swift in Sources */,
 				51F859352B05DEC50028946D /* ProfileViewViewModel.swift in Sources */,
 				51F859232B05DD5E0028946D /* ProfileView.swift in Sources */,
