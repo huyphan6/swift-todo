@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+/// view for one singular to do list item
+
+class ToDoListItemViewViewModel: ObservableObject {
+    init() {}
+}

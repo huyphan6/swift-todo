@@ -205,10 +205,10 @@
 			children = (
 				51F859322B05DEA40028946D /* MainViewViewModel.swift */,
 				51F859342B05DEC50028946D /* ProfileViewViewModel.swift */,
-				51F859362B05DEE40028946D /* ToDoListViewViewModel.swift */,
 				51F859382B05DEEE0028946D /* NewItemViewViewModel.swift */,
 				51F8593A2B05DEF70028946D /* LoginViewViewModel.swift */,
 				51F8593C2B05DF0A0028946D /* RegisterViewViewModel.swift */,
+				51F859362B05DEE40028946D /* ToDoListViewViewModel.swift */,
 				51F8593E2B05DF200028946D /* ToDoListItemViewViewModel.swift */,
 			);
 			path = ViewModels;
