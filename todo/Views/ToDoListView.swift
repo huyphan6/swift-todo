@@ -6,19 +6,34 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
     @StateObject var toDoListViewModel = ToDoListViewViewModel()
-    private let userId: String
+    @FirestoreQuery var items: [ToDoListItem] // query that continuously listens for items
     
     init (userId: String) {
-        self.userId = userId
+        /// path to get user's todos: `users/<uid>/todos/<entries>`
+        /// which is why we need to pass in the userID when instantiating the View
+        
+        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
     }
     
     var body: some View {
         NavigationView {
+            /// Vstack to vertically stack all to do list items
             VStack {
-                
+                List(items) {
+                    /// similar to python for word in list syntax
+                    item in ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button(action: {toDoListViewModel.delete(id: item.id)}, 
+                                   label: {Text("Delete")
+                                            .foregroundColor(Color.red)}
+                            )
+                        }
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar {
@@ -37,5 +52,5 @@ struct ToDoListView: View {
 }
 
 #Preview {
-    ToDoListView(userId: "")
+    ToDoListView(userId: "GeGs4fzfpMV5qGfxFkMOuhz6Mcm1")
 }
