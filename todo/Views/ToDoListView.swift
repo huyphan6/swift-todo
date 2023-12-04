@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
-    @StateObject var toDoListViewModel = ToDoListViewViewModel()
+    @StateObject var toDoListViewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem] // query that continuously listens for items
     
     init (userId: String) {
@@ -17,6 +17,9 @@ struct ToDoListView: View {
         /// which is why we need to pass in the userID when instantiating the View
         
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+        
+        self._toDoListViewModel =  StateObject(
+            wrappedValue: ToDoListViewViewModel(userId: userId))
     }
     
     var body: some View {
@@ -28,9 +31,9 @@ struct ToDoListView: View {
                     item in ToDoListItemView(item: item)
                         .swipeActions {
                             Button(action: {toDoListViewModel.delete(id: item.id)}, 
-                                   label: {Text("Delete")
-                                            .foregroundColor(Color.red)}
+                                   label: {Text("Delete")}
                             )
+                            .tint(.red)
                         }
                 }
                 .listStyle(PlainListStyle())
