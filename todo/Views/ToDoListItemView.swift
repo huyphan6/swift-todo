@@ -26,7 +26,12 @@ struct ToDoListItemView: View {
             Spacer()
             
             /// Need a button to mark the task as complete or incomplete
-            Button(action: {toDoListItemViewModel.toggleIsDone(item: item)}, label: {Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")})
+            Button(action: 
+                        {toDoListItemViewModel.toggleIsDone(item: item)},
+                   label:
+                    {Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                            .foregroundColor(.green)}
+            )
         }
     }
 }
