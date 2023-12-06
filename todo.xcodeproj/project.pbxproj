@@ -38,6 +38,7 @@
 		51F8593D2B05DF0A0028946D /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8593C2B05DF0A0028946D /* RegisterViewViewModel.swift */; };
 		51F8593F2B05DF200028946D /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8593E2B05DF200028946D /* ToDoListItemViewViewModel.swift */; };
 		51FC6DE72B20176300387E1D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FC6DE62B20176300387E1D /* Launch Screen.storyboard */; };
+		51FC6DE92B201C3B00387E1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 51FC6DE82B201C3B00387E1D /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		51F8593C2B05DF0A0028946D /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		51F8593E2B05DF200028946D /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		51FC6DE62B20176300387E1D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		51FC6DE82B201C3B00387E1D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		5192717B2B054DA100646EA4 = {
 			isa = PBXGroup;
 			children = (
+				51FC6DE82B201C3B00387E1D /* .gitignore */,
 				519271862B054DA100646EA4 /* todo */,
 				519271982B054DA500646EA4 /* todoTests */,
 				519271A22B054DA500646EA4 /* todoUITests */,
@@ -350,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FC6DE92B201C3B00387E1D /* .gitignore in Resources */,
 				519271902B054DA400646EA4 /* Preview Assets.xcassets in Resources */,
 				519271F12B055C8300646EA4 /* GoogleService-Info.plist in Resources */,
 				51FC6DE72B20176300387E1D /* Launch Screen.storyboard in Resources */,
