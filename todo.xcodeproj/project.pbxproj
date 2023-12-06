@@ -125,7 +125,6 @@
 		5192717B2B054DA100646EA4 = {
 			isa = PBXGroup;
 			children = (
-				51FC6DE82B201C3B00387E1D /* .gitignore */,
 				519271862B054DA100646EA4 /* todo */,
 				519271982B054DA500646EA4 /* todoTests */,
 				519271A22B054DA500646EA4 /* todoUITests */,
@@ -147,6 +146,7 @@
 		519271862B054DA100646EA4 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				51FC6DE82B201C3B00387E1D /* .gitignore */,
 				5192718D2B054DA400646EA4 /* todo.entitlements */,
 				51F859212B05DBBF0028946D /* Other */,
 				51F859202B05DBAB0028946D /* Models */,
